@@ -1,0 +1,20 @@
+{
+  "name": "jest-simple-config",
+  "version": "0.1.0",
+  "description": "Jest Config - Simple defaults, extendable options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helloitsjoe/jest-simple-config.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helloitsjoe/jest-simple-config/issues"
+  },
+  "homepage": "https://github.com/helloitsjoe/jest-simple-config#readme"
+}
