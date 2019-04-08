@@ -4,7 +4,7 @@
   "description": "Jest Config - Simple defaults, extendable options",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/helloitsjoe/jest-simple-config/issues"
   },
-  "homepage": "https://github.com/helloitsjoe/jest-simple-config#readme"
+  "homepage": "https://github.com/helloitsjoe/jest-simple-config#readme",
+  "dependencies": {
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.12.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.7.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  }
 }
