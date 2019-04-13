@@ -25,5 +25,9 @@
   },
   "devDependencies": {
     "prettier": "^1.16.4"
-  }
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ]
 }
