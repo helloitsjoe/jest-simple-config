@@ -3,17 +3,17 @@
 
 // Set default values for array/object input arguments so they can
 // be overridden or merged
-const collectCoverageFromDefault = [
+const defaultCollectCoverageFrom = [
   './src/**.js',
   '!**/__tests__',
   '!/node_modules',
 ];
-const coverageReportersDefault = ['json', 'text', 'html'];
-const moduleNameMapperDefault = {
+const defaultCoverageReporters = ['json', 'text', 'html'];
+const defaultModuleNameMapper = {
   '\\.(css|less|scss)$': 'identity-obj-proxy',
 };
-const testMatchDefault = ['**/__tests__/*.(test|spec|jest).js'];
-const testPathIgnorePatternsDefault = ['__tests__/(setup|testUtils).js'];
+const defaultTestMatch = ['**/__tests__/*.(test|spec|jest).js'];
+const defaultTestPathIgnorePatterns = ['__tests__/(setup|testUtils).js'];
 
 const makeJestConfig = ({
   // All imported modules in your tests should be mocked automatically
@@ -35,7 +35,7 @@ const makeJestConfig = ({
   collectCoverage = true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom = collectCoverageFromDefault,
+  collectCoverageFrom = defaultCollectCoverageFrom,
 
   // The directory where Jest should output its coverage files
   coverageDirectory = 'coverage',
@@ -44,7 +44,7 @@ const makeJestConfig = ({
   // coveragePathIgnorePatterns: null
 
   // A list of reporter names that Jest uses when writing coverage reports
-  coverageReporters = coverageReportersDefault,
+  coverageReporters = defaultCoverageReporters,
 
   // An object that configures minimum threshold enforcement for coverage results
   coverageThreshold,
@@ -81,7 +81,7 @@ const makeJestConfig = ({
   // ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
-  moduleNameMapper = moduleNameMapperDefault,
+  moduleNameMapper = defaultModuleNameMapper,
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
   // modulePathIgnorePatterns: [],
@@ -144,10 +144,10 @@ const makeJestConfig = ({
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  testMatch = testMatchDefault,
+  testMatch = defaultTestMatch,
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns = testPathIgnorePatternsDefault,
+  testPathIgnorePatterns = defaultTestPathIgnorePatterns,
 
   // The regexp pattern Jest uses to detect test files
   // testRegex: "",
@@ -211,9 +211,9 @@ console.log(makeJestConfig());
 
 module.exports = {
   makeJestConfig,
-  collectCoverageFromDefault,
-  coverageReportersDefault,
-  moduleNameMapperDefault,
-  testMatchDefault,
-  testPathIgnorePatternsDefault,
+  defaultCollectCoverageFrom,
+  defaultCoverageReporters,
+  defaultModuleNameMapper,
+  defaultTestMatch,
+  defaultTestPathIgnorePatterns,
 };

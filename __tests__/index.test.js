@@ -1,4 +1,4 @@
-const { makeJestConfig, testMatchDefault } = require('../index');
+const { makeJestConfig, defaultTestMatch } = require('../index');
 
 describe('Main config', () => {
   it('Runs with defaults', () => {
@@ -57,7 +57,7 @@ describe('Main config', () => {
 
   it('can merge array fields', () => {
     const myTestMatch = ['some regex'];
-    const testMatch = [...testMatchDefault, ...myTestMatch];
+    const testMatch = [...defaultTestMatch, ...myTestMatch];
     expect(makeJestConfig({ testMatch }).testMatch).toEqual(testMatch);
   });
 });
