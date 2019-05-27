@@ -7,7 +7,7 @@ describe('Main config', () => {
         "clearMocks": true,
         "collectCoverage": true,
         "collectCoverageFrom": Array [
-          "./src/**.js",
+          "./src/**/*.js",
           "!**/__tests__",
           "!/node_modules",
         ],
@@ -21,6 +21,8 @@ describe('Main config', () => {
         "moduleNameMapper": Object {
           "\\\\.(css|less|scss)$": "identity-obj-proxy",
         },
+        "setupFiles": Array [],
+        "setupFilesAfterEnv": Array [],
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],
@@ -39,6 +41,8 @@ describe('Main config', () => {
         "moduleNameMapper": Object {
           "\\\\.(css|less|scss)$": "identity-obj-proxy",
         },
+        "setupFiles": Array [],
+        "setupFilesAfterEnv": Array [],
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],

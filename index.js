@@ -4,7 +4,7 @@
 // Set default values for array/object input arguments so they can
 // be overridden or merged
 const defaultCollectCoverageFrom = [
-  './src/**.js',
+  './src/**/*.js',
   '!**/__tests__',
   '!/node_modules',
 ];
@@ -125,10 +125,10 @@ const makeJestConfig = ({
   // runner: "jest-runner",
 
   // The paths to modules that run some code to configure or set up the testing environment before each test
-  // setupFiles: [],
+  setupFiles = [],
 
   // The path to a module that runs some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv,
+  setupFilesAfterEnv = [],
 
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
@@ -189,15 +189,12 @@ const makeJestConfig = ({
   const config = {
     clearMocks,
     moduleNameMapper,
+    setupFiles,
+    setupFilesAfterEnv,
     testMatch,
     testPathIgnorePatterns,
     verbose,
   };
-  // Redturning an undefined setupFilesAfterEnv breaks the
-  // test runner so we only add it if it's explicitly passed in
-  if (typeof setupFilesAfterEnv !== 'undefined') {
-    config.setupFilesAfterEnv = setupFilesAfterEnv;
-  }
   const coverageConfig = collectCoverage && {
     collectCoverage,
     collectCoverageFrom,
