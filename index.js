@@ -204,7 +204,6 @@ const makeJestConfig = ({
   };
   return { ...config, ...coverageConfig };
 };
-console.log(makeJestConfig());
 
 module.exports = {
   makeJestConfig,
