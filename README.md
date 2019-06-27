@@ -60,4 +60,3 @@ will give you the following config:
 };
 ```
 
-// TODO: finish this

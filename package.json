@@ -4,6 +4,7 @@
   "description": "Jest Config - Simple defaults, extendable options",
   "main": "index.js",
   "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "test": "jest"
   },
   "repository": {
@@ -15,20 +16,18 @@
       "pre-push": "npm t"
     }
   },
-  "keywords": [],
+  "keywords": [
+    "jest",
+    "config"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/helloitsjoe/jest-simple-config/issues"
   },
   "homepage": "https://github.com/helloitsjoe/jest-simple-config#readme",
-  "dependencies": {
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.7.1"
-  },
   "devDependencies": {
+    "coveralls": "^3.0.4",
     "husky": "^1.3.1",
     "prettier": "^1.16.4"
   },
