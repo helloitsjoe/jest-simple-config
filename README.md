@@ -2,6 +2,10 @@
 
 Generates a Jest config with simple defaults and extendable options.
 
+[![Build Status](https://travis-ci.com/helloitsjoe/jest-simple-config.svg?branch=master)](https://travis-ci.com/helloitsjoe/jest-simple-config)
+[![Coverage Status](https://coveralls.io/repos/github/helloitsjoe/jest-simple-config/badge.svg?branch=master)](https://coveralls.io/github/helloitsjoe/jest-simple-config?branch=master)
+[![npm](https://img.shields.io/npm/v/jest-simple-config.svg?color=lightgray)](https://www.npmjs.com/package/jest-simple-config)
+
 ## Installation
 
 Install as a dev dependency:
