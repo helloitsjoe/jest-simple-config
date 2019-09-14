@@ -32,7 +32,7 @@ This will give you a basic Jest config, equivalent to the following:
 const config = {
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ['./src/**.js', '!**/__tests__', '!/node_modules'],
+  collectCoverageFrom: ['./src/**.js', '!**/__tests__/**', '!/node_modules'],
   coverageDirectory: 'coverage',
   coverageReporters: ['json', 'text', 'html'],
   moduleNameMapper: {
@@ -44,7 +44,8 @@ const config = {
 };
 ```
 
-`collectCoverage` is true by default. If you don't want a coverage report, setting that option to false will remove the other coverage fields:
+`collectCoverage` is true by default. If you don't want a coverage report, setting that option to
+false will remove the other coverage fields:
 
 ```js
 const config = makeJestConfig({ collectCoverage: false });
@@ -63,4 +64,3 @@ will give you the following config:
   verbose: true,
 };
 ```
-
