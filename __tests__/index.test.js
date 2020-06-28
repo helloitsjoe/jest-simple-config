@@ -16,6 +16,7 @@ describe("Main config", () => {
           "json",
           "text",
           "html",
+          "lcov",
         ],
         "coverageThreshold": undefined,
         "moduleNameMapper": Object {
@@ -36,22 +37,22 @@ describe("Main config", () => {
 
   it("collectCoverage = false does not include any coverage properties", () => {
     expect(makeJestConfig({ collectCoverage: false })).toMatchInlineSnapshot(`
-            Object {
-              "clearMocks": true,
-              "moduleNameMapper": Object {
-                "\\\\.(css|less|scss)$": "identity-obj-proxy",
-              },
-              "setupFiles": Array [],
-              "setupFilesAfterEnv": Array [],
-              "testMatch": Array [
-                "**/__tests__/*.(test|spec|jest).js",
-              ],
-              "testPathIgnorePatterns": Array [
-                "__tests__/(setup|testUtils).js",
-              ],
-              "verbose": true,
-            }
-        `);
+                  Object {
+                    "clearMocks": true,
+                    "moduleNameMapper": Object {
+                      "\\\\.(css|less|scss)$": "identity-obj-proxy",
+                    },
+                    "setupFiles": Array [],
+                    "setupFilesAfterEnv": Array [],
+                    "testMatch": Array [
+                      "**/__tests__/*.(test|spec|jest).js",
+                    ],
+                    "testPathIgnorePatterns": Array [
+                      "__tests__/(setup|testUtils).js",
+                    ],
+                    "verbose": true,
+                  }
+            `);
   });
 
   it("can replace array fields", () => {
