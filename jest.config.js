@@ -1,3 +1,3 @@
-const { makeJestConfig } = require('./index');
+const { makeJestConfig, defaultCollectCoverageFrom } = require('./index');
 
-module.exports = makeJestConfig({ collectCoverage: true });
+module.exports = makeJestConfig({ collectCoverageFrom: ['./index.js'] });
