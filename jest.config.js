@@ -1,3 +1,3 @@
 const { makeJestConfig } = require('./index');
 
-module.exports = makeJestConfig();
+module.exports = makeJestConfig({ collectCoverage: true });
