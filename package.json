@@ -1,6 +1,6 @@
 {
   "name": "jest-simple-config",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Jest Config - Simple defaults, extendable options",
   "main": "index.js",
   "scripts": {
