@@ -3,7 +3,11 @@
 
 // Set default values for array/object input arguments so they can
 // be overridden or merged
-const defaultCollectCoverageFrom = ['./src/**/*.js', '!**/__tests__/**', '!/node_modules'];
+const defaultCollectCoverageFrom = [
+  './src/**/*.js',
+  '!**/__tests__/**',
+  '!/node_modules',
+];
 const defaultCoverageReporters = ['json', 'text', 'html', 'lcov'];
 const defaultModuleNameMapper = {
   '\\.(css|less|scss)$': 'identity-obj-proxy',
@@ -129,12 +133,12 @@ const makeJestConfig = ({
   // A list of paths to snapshot serializer modules Jest should use for snapshot testing
   // snapshotSerializers: [],
 
-  // The test environment that will be used for testing
-  // testEnvironment = "jest-environment-jsdom",
-  // testEnvironment: "node",
+  // The test environment that will be used for testing (Undefined uses jest default)
+  // e.g. testEnvironment = "jsdom",
+  testEnvironment,
 
   // Options that will be passed to the testEnvironment
-  // testEnvironmentOptions: {},
+  testEnvironmentOptions,
 
   // Adds a location field to test results
   // testLocationInResults: false,
@@ -189,6 +193,8 @@ const makeJestConfig = ({
     setupFilesAfterEnv,
     testMatch,
     testPathIgnorePatterns,
+    testEnvironment,
+    testEnvironmentOptions,
     verbose,
   };
   const coverageConfig = collectCoverage && {
