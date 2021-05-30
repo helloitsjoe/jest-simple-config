@@ -1,3 +1,9 @@
+## [0.4.0](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.0) (2021-05-30)
+
+**Feature**
+
+- Allow testEnvironment option
+
 ## [0.3.0](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.3.0) (2021-05-30)
 
 **Feature**
