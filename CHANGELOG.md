@@ -1,3 +1,9 @@
+## [0.4.1](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.1) (2021-08-10)
+
+**Chore**
+
+Update path-parse to 1.0.7
+
 ## [0.4.0](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.0) (2021-05-30)
 
 **Feature**
