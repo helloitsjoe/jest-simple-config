@@ -1,3 +1,9 @@
+## [0.4.2](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.2) (2021-12-29)
+
+**Bug fix**
+
+- Defaults for `testEnvironment` and `testEnvironmentOptions`
+
 ## [0.4.1](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.1) (2021-08-10)
 
 **Chore**
