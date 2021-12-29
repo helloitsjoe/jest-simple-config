@@ -135,10 +135,10 @@ const makeJestConfig = ({
 
   // The test environment that will be used for testing (Undefined uses jest default)
   // e.g. testEnvironment = "jsdom",
-  testEnvironment,
+  testEnvironment = 'node',
 
   // Options that will be passed to the testEnvironment
-  testEnvironmentOptions,
+  testEnvironmentOptions = {},
 
   // Adds a location field to test results
   // testLocationInResults: false,
