@@ -24,8 +24,8 @@ describe('Main config', () => {
         },
         "setupFiles": Array [],
         "setupFilesAfterEnv": Array [],
-        "testEnvironment": "node",
-        "testEnvironmentOptions": Object {},
+        "testEnvironment": undefined,
+        "testEnvironmentOptions": undefined,
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],
@@ -46,8 +46,8 @@ describe('Main config', () => {
         },
         "setupFiles": Array [],
         "setupFilesAfterEnv": Array [],
-        "testEnvironment": "node",
-        "testEnvironmentOptions": Object {},
+        "testEnvironment": undefined,
+        "testEnvironmentOptions": undefined,
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],
