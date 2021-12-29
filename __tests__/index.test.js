@@ -1,7 +1,7 @@
-const { makeJestConfig, defaultTestMatch } = require('../index');
+const { makeJestConfig, defaultTestMatch } = require("../index");
 
-describe('Main config', () => {
-  it('Runs with defaults', () => {
+describe("Main config", () => {
+  it("Runs with defaults", () => {
     expect(makeJestConfig()).toMatchInlineSnapshot(`
       Object {
         "clearMocks": true,
@@ -24,8 +24,8 @@ describe('Main config', () => {
         },
         "setupFiles": Array [],
         "setupFilesAfterEnv": Array [],
-        "testEnvironment": undefined,
-        "testEnvironmentOptions": undefined,
+        "testEnvironment": "node",
+        "testEnvironmentOptions": Object {},
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],
@@ -37,7 +37,7 @@ describe('Main config', () => {
     `);
   });
 
-  it('collectCoverage = false does not include any coverage properties', () => {
+  it("collectCoverage = false does not include any coverage properties", () => {
     expect(makeJestConfig({ collectCoverage: false })).toMatchInlineSnapshot(`
       Object {
         "clearMocks": true,
@@ -46,8 +46,8 @@ describe('Main config', () => {
         },
         "setupFiles": Array [],
         "setupFilesAfterEnv": Array [],
-        "testEnvironment": undefined,
-        "testEnvironmentOptions": undefined,
+        "testEnvironment": "node",
+        "testEnvironmentOptions": Object {},
         "testMatch": Array [
           "**/__tests__/*.(test|spec|jest).js",
         ],
@@ -59,13 +59,13 @@ describe('Main config', () => {
     `);
   });
 
-  it('can replace array fields', () => {
-    const testMatch = ['some regex'];
+  it("can replace array fields", () => {
+    const testMatch = ["some regex"];
     expect(makeJestConfig({ testMatch }).testMatch).toEqual(testMatch);
   });
 
-  it('can merge array fields', () => {
-    const myTestMatch = ['some regex'];
+  it("can merge array fields", () => {
+    const myTestMatch = ["some regex"];
     const testMatch = [...defaultTestMatch, ...myTestMatch];
     expect(makeJestConfig({ testMatch }).testMatch).toEqual(testMatch);
   });
