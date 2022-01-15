@@ -2,8 +2,8 @@
 
 Generates a Jest config with simple defaults and extendable options.
 
-[![Build Status](https://travis-ci.com/helloitsjoe/jest-simple-config.svg?branch=master)](https://travis-ci.com/helloitsjoe/jest-simple-config)
-[![Coverage Status](https://coveralls.io/repos/github/helloitsjoe/jest-simple-config/badge.svg?branch=master)](https://coveralls.io/github/helloitsjoe/jest-simple-config?branch=master)
+[![Build Status](https://travis-ci.com/helloitsjoe/jest-simple-config.svg?branch=main)](https://travis-ci.com/helloitsjoe/jest-simple-config)
+[![Coverage Status](https://coveralls.io/repos/github/helloitsjoe/jest-simple-config/badge.svg?branch=main)](https://coveralls.io/github/helloitsjoe/jest-simple-config?branch=main)
 [![npm](https://img.shields.io/npm/v/jest-simple-config.svg?color=lightgray)](https://www.npmjs.com/package/jest-simple-config)
 
 ## Installation
@@ -44,8 +44,8 @@ const config = {
 };
 ```
 
-`collectCoverage` is true by default. If you don't want a coverage report, setting that option to
-false will remove the other coverage fields:
+`collectCoverage` is true by default. If you don't want a coverage report,
+setting that option to false will remove the other coverage fields:
 
 ```js
 const config = makeJestConfig({ collectCoverage: false });

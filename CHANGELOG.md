@@ -1,3 +1,9 @@
+## [0.4.4](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.4) (2022-01-15)
+
+**Chore**
+
+- Fix branch in GitHub actions
+
 ## [0.4.3](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.3) (2022-01-15)
 
 **Chore**
