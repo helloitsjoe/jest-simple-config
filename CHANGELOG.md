@@ -1,3 +1,9 @@
+## [0.4.3](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.3) (2022-01-15)
+
+**Chore**
+
+- Bump deps
+
 ## [0.4.2](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.2) (2021-12-29)
 
 **Bug fix**
