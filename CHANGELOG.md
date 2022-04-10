@@ -1,3 +1,9 @@
+## [0.4.5](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.5) (2022-04-10)
+
+**Chore**
+
+- Update minimist
+
 ## [0.4.4](https://github.com/helloitsjoe/jest-simple-config/releases/tag/v0.4.4) (2022-01-15)
 
 **Chore**
