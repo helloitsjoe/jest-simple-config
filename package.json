@@ -1,11 +1,12 @@
 {
   "name": "jest-simple-config",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Jest Config - Simple defaults, extendable options",
   "main": "index.js",
   "scripts": {
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "test": "jest"
+    "test": "jest",
+    "release": "npx helloitsjoe/release-toolkit release"
   },
   "repository": {
     "type": "git",
